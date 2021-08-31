@@ -4,49 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Spense Landing Page</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <div>
-          <li class="logo">spense.</li>
-        </div>
-        <div>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Features</a></li>
-        </div>
-        <div>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Get Started</a></li>
-        </div>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul class="main-nav">
+          <div class="main-nav-item">
+            <li class="logo">spense.</li>
+          </div>
+          <div class="main-nav-item">
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Features</a></li>
+          </div>
+          <div class="main-nav-item">
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="get-started">Get Started</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="hero">
+      <div class="section-container">
+        <section class="hero">
+          <div>
+            <h1>Share your unfiltered <br />thoughts. Get Paid.</h1>
+            <p>
+              Spense is an open platform for individuals to share unfiltered
+              thoughts. Discuss the topics you love, and get paid for doing just
+              that.
+            </p>
+            <ul>
+              <li>
+                <img src="./Assets/Checkmark.svg" alt="" />
+                Receive 99% of the earnings
+              </li>
+              <li>
+                <img src="./Assets/Checkmark.svg" alt="" />
+                Get paid via Debit Card, ACH, or PayPal
+              </li>
+              <li>
+                <img src="./Assets/Checkmark.svg" alt="" />
+                Withdraw your earnings anytime
+              </li>
+            </ul>
+            <form>
+              <input type="email" placeholder="john@example.com" />
+              <input type="submit" value="Get Started" class="get-started" />
+            </form>
+          </div>
+          <div class="hero-image-container">
+            <div class="hero-image"></div>
+          </div>
+        </section>
+      </div>
+      <div class="section-container white-bg">
+        <section class="logos-container white-bg">
+          <div class="logo-container">
+            <img src="./Assets/Facebook Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Dribbble Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Youtube Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Pinterest Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Twitter Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Reddit Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Google Logo.png" alt="" />
+          </div>
+          <div class="logo-container">
+            <img src="./Assets/Slack Logo.png" alt="" />
+          </div>
+        </section>
+      </div>
+      <section class="escrow">
         <div>
-          <h1>Share your unfiltered <br />thoughts. Get Paid.</h1>
+          <h2>Secure your money with Escrow.</h2>
           <p>
-            Spense is an open platform for individuals to share unfiltered
-            thoughts. Discuss the topics you love, and get paid for doing just
-            that.
+            Spense uses Escrow to secure all payments. We believe Escrow offers
+            the highest level of security for your payments, so you never need
+            to worry about scams.
+            <a href="#"
+              >Learn more about Escrow <i class="fas fa-arrow-right"></i
+            ></a>
           </p>
-          <ul>
-            <li>
-              <img src="./Assets/Checkmark.svg" alt="" />
-              Receive 99% of the earnings
-            </li>
-            <li>
-              <img src="./Assets/Checkmark.svg" alt="" />
-              Get paid via Debit Card, ACH, or PayPal
-            </li>
-            <li>
-              <img src="./Assets/Checkmark.svg" alt="" />
-              Withdraw your earnings anytime
-            </li>
-          </ul>
         </div>
       </section>
     </main>
