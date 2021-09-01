@@ -326,7 +326,8 @@ footer div:first-of-type {
     flex: 100%;
   }
 
-  form .get-started {
+  form button.get-started,
+  input[type='email'] {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 50%;
