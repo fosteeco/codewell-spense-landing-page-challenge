@@ -151,7 +151,12 @@ section h2 {
   flex: 1;
 }
 
+.escrow-image-container {
+  height: 100%;
+}
+
 .escrow-image {
+  height: 100%;
   background-image: url('./Assets/phone-mockup-desktop.png');
   background-size: cover;
   background-position: right;
@@ -208,6 +213,7 @@ footer {
 footer * {
   flex: 1;
 }
+
 footer div:first-of-type {
   flex: 2;
 }
@@ -215,4 +221,114 @@ footer div:first-of-type {
 .footer-links {
   padding: 0;
   margin: 0;
+}
+
+.ham-menu {
+  display: none;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: 0;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .hero-image-container {
+    order: -1;
+    padding: 0;
+  }
+
+  .hero-image {
+    height: 60vh;
+    background-size: 100%;
+    background-position: top left;
+  }
+
+  .center-links {
+    margin-left: auto;
+  }
+
+  .escrow {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .escrow-image {
+    height: 350px;
+    background-image: url('./Assets/Phone Mockup (Tablet).png');
+    background-size: contain;
+    background-position: bottom center;
+  }
+
+  .amazing-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .amazing-content div:first-of-type {
+    order: 2;
+  }
+
+  .create-content-img {
+    background-size: contain;
+    background-position: center;
+    height: 35vh;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    flex-grow: 0;
+    padding: 0 10px;
+  }
+
+  footer div:first-of-type {
+    flex: 50%;
+  }
+
+  footer div:nth-of-type(2) {
+    flex: 25%;
+  }
+
+  footer div:nth-of-type(3) {
+    flex: 25%;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-image {
+    height: 50vh;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .ham-menu {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .logos-container > div:nth-child(n + 4) {
+    display: none;
+  }
+
+  footer div {
+    flex: 50%;
+  }
+
+  footer div:first-of-type {
+    flex: 100%;
+  }
+
+  form .get-started {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+  }
 }
