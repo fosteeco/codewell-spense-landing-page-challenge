@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
 :root {
   --background-color: #efeeea;
 }
@@ -8,12 +9,13 @@
 
 body {
   margin: 0;
+  font-family: 'Cabin', sans-serif;
 }
 
 nav,
 section {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   background-color: var(--background-color);
 }
 
@@ -33,11 +35,32 @@ ul {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
   margin: 0;
 }
 
 .main-nav-item {
   display: flex;
+  align-items: center;
+}
+
+button.get-started {
+  border: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.main-nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .main-nav-item * {
@@ -53,8 +76,24 @@ ul {
   display: flex;
 }
 
-.hero * {
+.hero > div {
   flex: 1;
+}
+
+.hero ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hero ul li {
+  display: flex;
+  align-items: center;
+}
+
+.hero ul li img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .hero-image-container {
@@ -62,10 +101,26 @@ ul {
   padding: 30px;
 }
 
+input[type='email'] {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px #aaa solid;
+}
+
+section {
+  padding: 30px 30px 0 30px;
+  border-radius: 5px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
 .hero-image {
   background-image: url('./Assets/hero-image-desktop.png');
   border-radius: 10px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   width: 100%;
@@ -85,4 +140,79 @@ ul {
 
 .logo-container img {
   width: 100%;
+}
+
+.escrow {
+  height: 30vh;
+  display: flex;
+}
+
+.escrow > div {
+  flex: 1;
+}
+
+.escrow-image {
+  background-image: url('./Assets/phone-mockup-desktop.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.amazing-content {
+  display: flex;
+  height: 40vh;
+}
+
+.create-content-img {
+  height: 100%;
+  background-image: url('./Assets/Text Editor.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.amazing-content > div {
+  flex: 1;
+}
+
+.footer-wrapper {
+  background-color: #000;
+}
+
+footer {
+  display: flex;
+  background-color: #000;
+  color: #4f4f4f;
+  padding: 0 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+}
+
+.footer-links li {
+  margin: 7px 0;
+}
+
+.footer-links li a:visited {
+  color: #4f4f4f;
+}
+
+footer * {
+  flex: 1;
+}
+footer div:first-of-type {
+  flex: 2;
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
 }
